@@ -45,4 +45,7 @@
     turnOn = true;
     return val;
   };
+
+  window.switchOnCounting = () => turnOn = true;
+  window.switchOffCounting = () => turnOn = false;
 })();
