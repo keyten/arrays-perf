@@ -19,6 +19,7 @@
     }
   };
 
+  // todo: check if withReference works
   let turnOn = true;
   const monkeyPatchArrayFunction = (funcName, { withReference } = {}) => {
     const oldFunc = Array.prototype[funcName];
@@ -56,6 +57,7 @@
   monkeyPatchArrayFunction('sort', { withReference: true });
   monkeyPatchArrayFunction('toReversed', { withReference: true });
   monkeyPatchArrayFunction('toSorted', { withReference: true });
+  monkeyPatchArrayFunction('slice', { withReference: true });
 
   window.getCounts = () => {
     turnOn = false;
