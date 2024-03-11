@@ -63,7 +63,7 @@
     turnOn = true;
     return val;
   };
-  window.getCountsFor = (arr) => return counts.get(arr);
+  window.getCountsFor = (arr) => counts.get(arr);
 
   window.switchOnCounting = () => turnOn = true;
   window.switchOffCounting = () => turnOn = false;
